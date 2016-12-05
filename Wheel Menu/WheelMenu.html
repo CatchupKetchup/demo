@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Wheel Menu</title>
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<style>
+body{
+	margin:0; 
+	background-color:rgb(0,152,158);
+}
+
+ul{ 
+	padding: 0; 
+	margin: 0;
+}
+
+li{ list-style: none; }
+
+#title{
+	font-size:36px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align:center;
+}
+
+.space{
+	float: left;
+	width: 50%;
+	padding: 200px 0;
+}
+
+.menu{ position:relative; }
+
+.switch{	
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+.switch img{
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	cursor: pointer;
+}
+
+.options{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	margin-left: -26px;
+	margin-top: -26px;
+	overflow: hidden;
+	opacity: 0;
+	transition:1s;
+}
+
+.options img{
+	width: 32px;
+	height: 32px;
+	padding: 10px;
+	background-color: #666;
+	display: block;
+}
+
+.space--1{ background-color: rgb(0,103,48); }
+.space--2{ background-color: rgb(243,152,57); }
+.space--3{ background-color: rgb(253,223,143); }
+.space--4{ background-color: rgb(236,110,129); }
+.space--5{ background-color: rgb(216,34,13); }
+.space--6{ background-color: rgb(204,225,152); }
+
+</style>
+</head>
+
+<body>
+<h3 id="title">Different kinds of Wheel Menu</h3>
+<div class="space space--1">
+    <ul class="menu menu--1">
+        <li class="options">
+            <img src="img/icon1.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon2.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon3.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon4.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon5.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon6.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon7.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon8.png" />
+        </li>
+        <li class="switch">
+            <img src="img/close21.png" />
+        </li>
+    </ul>
+</div>
+<div class="space space--2">
+    <ul class="menu menu--2">
+        <li class="options">
+            <img src="img/icon1.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon2.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon3.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon4.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon5.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon6.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon7.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon8.png" />
+        </li>
+        <li class="switch">
+            <img src="img/close21.png" />
+        </li>
+    </ul>
+</div>
+<div class="space space--3">
+    <ul class="menu menu--3">
+        <li class="options">
+            <img src="img/icon1.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon2.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon3.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon4.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon5.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon6.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon7.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon8.png" />
+        </li>
+        <li class="switch">
+            <img src="img/close21.png" />
+        </li>
+    </ul>
+</div>
+<div class="space space--4">
+    <ul class="menu menu--4">
+        <li class="options">
+            <img src="img/icon1.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon2.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon3.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon4.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon5.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon6.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon7.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon8.png" />
+        </li>
+        <li class="switch">
+            <img src="img/close21.png" />
+        </li>
+    </ul>
+</div>
+<div class="space space--5">
+    <ul class="menu menu--5">
+        <li class="options">
+            <img src="img/icon1.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon2.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon3.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon4.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon5.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon6.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon7.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon8.png" />
+        </li>
+        <li class="switch">
+            <img src="img/close21.png" />
+        </li>
+    </ul>
+</div>
+<div class="space space--6">
+    <ul class="menu menu--6">
+        <li class="options">
+            <img src="img/icon1.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon2.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon3.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon4.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon5.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon6.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon7.png" />
+        </li>
+        <li class="options">
+            <img src="img/icon8.png" />
+        </li>
+        <li class="switch">
+            <img src="img/close21.png" />
+        </li>
+    </ul>
+</div>
+<script>
+	//interAngle间隔角度，beginAngle开始角度
+	function menuShow(obj,spreadOn,interAngle,beginAngle,distance,dir){
+		! dir && (dir = 1);
+		var angle = dir*( ( obj.nextAll().length - 1) * interAngle + beginAngle ) / 360 * Math.PI*2 ;
+		if(spreadOn){
+			obj.css("left",(Math.cos(angle)*distance+obj.parent().get(0).offsetWidth/2)+"px");
+			obj.css("top",(Math.sin(angle)*distance+obj.parent().get(0).offsetHeight/2)+"px");
+		}
+		obj.css("opacity",1);
+		if(obj.prev().get(0)){
+			setTimeout(function(){
+				menuShow(obj.prev(),spreadOn,interAngle,beginAngle,distance,dir);
+			},100)
+		}
+	}
+	
+	function menuClose1(obj,spreadOn){
+		if(spreadOn){
+			obj.css("left","50%");
+			obj.css("top","50%");
+		}
+		obj.css("opacity",0);
+		if(obj.prev().get(0)){
+			setTimeout(function(){
+				menuClose1(obj.prev(),spreadOn);
+			},100)
+		}
+	}
+		
+	function spreadOut(obj,spreadOn,interAngle,beginAngle,distance,dir){
+		! dir && (dir = 1);
+		var angle = dir*( ( obj.nextAll().length - 1 )*interAngle + beginAngle ) / 360 * Math.PI*2 ;
+		obj.css("display","none");
+		obj.css("left",(Math.cos(angle)*distance+obj.parent().get(0).offsetWidth/2)+"px");
+		obj.css("top",(Math.sin(angle)*distance+obj.parent().get(0).offsetHeight/2)+"px");
+		obj.css("display","block");
+		if(obj.prev().get(0)){
+			spreadOut(obj.prev(),spreadOn,interAngle,beginAngle,distance,dir);
+		}
+	};
+	
+	function wheelOpen(obj,spreadOn,interAngle,beginAngle,distance,dir){
+		! beginAngle && (beginAngle = 0);
+		! distance && (distance = 100)
+		! interAngle && (interAngle = 45)
+		if(!spreadOn){
+			spreadOut(obj.prev(),spreadOn,interAngle,beginAngle,distance,dir);
+		}
+		obj.click(function(){
+			if(this.onOff){
+				menuClose1($(this).prev(),spreadOn);
+				this.onOff = false;
+			}else{
+				menuShow($(this).prev(),spreadOn,interAngle,beginAngle,distance,dir);
+				this.onOff = true;
+			}
+		})
+	};
+	
+	//wheelOpen(obj,spreadOn,interAngle,beginAngle,distance,dir)
+	wheelOpen($(".menu--1 .switch"),true,45,90,80,1);
+	wheelOpen($(".menu--2 .switch"),false,45,0,80,1);
+	wheelOpen($(".menu--3 .switch"),true,30,-195,80,-1);
+	wheelOpen($(".menu--4 .switch"),false,25,0,150,-1);
+	wheelOpen($(".menu--5 .switch"),true,225,90,80,1);
+	wheelOpen($(".menu--6 .switch"),false,225,0,80,1);
+	
+</script>
+</body>
+</html>

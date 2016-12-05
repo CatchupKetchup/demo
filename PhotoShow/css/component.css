@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0; 
+	background-color:rgb(187,170,210); 
+}
+
+ul,h3,h4{ 
+	padding: 0; 
+	margin: 0;
+}
+
+li{ list-style: none; }
+
+
+/* main title */
+#title{
+	margin:20px 0;
+	font-size:36px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align:center;
+}
+
+
+/* subtitle */
+.title{
+	font-size: 20px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.space{
+	position:relative;
+}
+
+.photobox{ 
+	position: absolute; 
+	top: 70px;
+}
+
+
+.photorow{
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+
+/* Photoframe style */
+.photoframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	padding: 5px;
+	border-radius: 5px;
+	background: rgb(255,255,255);
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.pic,
+.pic img{
+	width:inherit;	
+}
+
+
+/* Text in Pic*/
+.picname{
+	line-height:40px;
+	font-size:20px;
+	font-family:"MS Serif", "New York", serif;
+	text-align:center;
+}
+
+
+
+
+
+
+/* Pic begin location */
+.slight--1 .photobox{ left: 100px; }
+.slight--2 .photobox{ left:870px; }
+.slight--3 .photobox{ left:560px; }
+.slight--4 .photobox{
+	top:400px;
+	left:560px;
+}
+
+
+/* Pic Rotate */
+.mode .photoframe:nth-child(1){transform: rotate(15deg);}
+.mode .photoframe:nth-child(2){transform: rotate(0deg);}
+.mode .photoframe:nth-child(3){transform: rotate(-10deg);}
+.mode .photoframe:nth-child(4){transform: rotate(7deg);}
+
+
+/* Space Size */
+.space--1{ height:300px; }
+.space--2{ height:800px; }
+.space--3{ height:300px; }
+.space--4{ height:800px; }
