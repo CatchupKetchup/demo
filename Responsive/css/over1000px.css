@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+.nav{
+	width: 70%;
+}
+
+.nav li{
+	height: 200px;
+}
+
+.nav li:hover{
+	height: 220px;
+	border-bottom-color: rgba(0,0,0,0.3);
+}

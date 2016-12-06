@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 400px)" href="css/0-400px.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 400px) and (max-width: 800px)" href="css/400-800px.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width:800px) and (max-width: 1000px)" href="css/800-1000px.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="css/over1000px.css" />
+<title>Responsive</title>
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+<ul class="nav">
+	<li>
+    	<div>
+        	<img src="head_icon3.png" />
+        </div>
+    	<span>Home</span>
+    </li>
+	<li>
+    	<div>
+        	<img src="head_icon3.png" />
+        </div>
+    	<span>Home</span>
+    </li>
+	<li>
+    	<div>
+        	<img src="head_icon3.png" />
+        </div>
+    	<span>Home</span>
+    </li>
+	<li>
+    	<div>
+        	<img src="head_icon3.png" />
+        </div>
+    	<span>Home</span>
+    </li>
+	<li>
+    	<div>
+        	<img src="head_icon3.png" />
+        </div>
+    	<span>Home</span>
+    </li>
+</ul>
+<script>
+	window.onload = function(){
+		$(".nav li").mouseover(function(){
+			if(document.body.clientWidth>=800){
+				$(this).children("div").css("top","1.5em")
+				$(this).children("div").css("width","5em")
+				$(this).children("div").css("height","5em")
+				$(this).children("div").css("margin-left","-2.5em")
+				$(this).children("div").css("background-color","rgba(255,255,255,0.3)")
+			}
+		});
+		$(".nav li").mouseout(function(){
+			if(document.body.clientWidth>=800){
+				$(this).children("div").css("top","0")
+				$(this).children("div").css("width","8em")
+				$(this).children("div").css("height","8em")
+				$(this).children("div").css("margin-left","-4em")
+				$(this).children("div").css("background-color","rgba(255,255,255,0)")
+			};
+		})
+	}
+</script>
+</body>
+</html>

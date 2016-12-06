@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+.nav{
+	margin: 0 auto;
+	zoom: 1;
+}
+
+.nav:after{
+	content: "";
+	display: block;
+	clear: both
+}
+
+.nav li{
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 160px;
+		
+	border-bottom-width: 0.125em;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(0,0,0,0);
+		
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.nav li:nth-child(1){ background-color: rgb(111,24,110); }
+.nav li:nth-child(2){ background-color: rgb(108,187,90); }
+.nav li:nth-child(3){ background-color: rgb(239,235,36); }
+.nav li:nth-child(4){ background-color: rgb(235,110,160); }
+.nav li:nth-child(5){ background-color: rgb(0,140,214); }
+
+.nav li div{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 8em;
+	height: 8em;
+	margin-left: -4em;
+	background-color: rgba(255,255,255,0);
+	border-radius: 50%;
+	transition: 0.5s;
+}
+
+.nav li img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 2em;
+	height: 2em;
+	margin-left: -1em;
+	margin-top: -1em;
+}
+
+.nav li span{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	
+	text-align: center;
+	color: rgb(255,255,255);
+	font-size: 1.5em;
+	font-family: "Lucida Console", Monaco, monospace;
+	line-height: 2em;
+}
+
