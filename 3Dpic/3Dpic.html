@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jon Snow--3Dpic</title>
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<style>
+#container3d{
+	width: 800px;
+	margin: 0 auto;
+	transform-style: preserve-3d;
+}
+#object3d{
+	width: inherit;
+	transform-style: preserve-3d;
+}
+
+img{
+	width: inherit;
+	transform:  translateZ(30px);
+	box-shadow: 0px 0px 50px #000;
+}
+</style>
+</head>
+
+<body>
+<div id="container3d">
+    <div id="object3d">
+        <img src="800_4_1.jpg" />
+    </div>
+</div>
+<script>
+	$("#object3d").mousemove(function(event){
+		var xdeg = (event.clientX-this.offsetLeft-$(this).children().width()/2)/($(this).children("img").width()/2)*50
+		var ydeg = -(event.clientY-this.offsetTop-$(this).children().height()/2)/($(this).children("img").height()/2)*50
+		
+		$(this).css("transform","rotateX("+ydeg+"deg) rotateY("+xdeg+"deg)")
+		$(this).children("img").css("box-shadow",-xdeg+"px "+ydeg+"px 50px #000")
+	})
+</script>
+</body>
+</html>
